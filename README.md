@@ -1,39 +1,60 @@
 # SAP ABAP FI Document Management
 
 ## Description
-Complete ABAP solution for managing financial documents in SAP, including manual creation, consultation, printing, and process automation.
+End-to-end ABAP solution simulating a financial document management process in SAP NetWeaver 7.02. The project covers creation, persistence, consultation, printing, and mass automation of accounting documents, integrating multiple ABAP components into a single functional flow.
+
+## Architecture Overview
+
+The system is designed as a complete document lifecycle:
+
+- Data Entry (Module Pool)
+- Data Persistence (Custom FI-like tables)
+- Data Consultation (ALV Report)
+- Document Output (SmartForms)
+- Mass Processing (Batch Input Automation)
 
 ## Project Components
 
 - **ZFIP_FB01 (Module Pool)**  
-  Transaction for manually creating financial documents, including data validations and business logic.  
-  Folder: `/1_src/ZFIP_FB01`
+  Transaction for manual creation of financial documents using Dynpro screens (PBO/PAI). Includes validations, business logic, and persistence into custom FI-like tables.
+
+  Path:
+  `/1_src/ZFIP_FB01`
+  `/2_docs/ZFIP_FB01`
 
 - **ZFIR_BUSCAR_DOC (ALV Report)**  
-  Selection screen report to consult created documents and display them in an ALV grid.  
-  Folder: `/1_src/ZFIR_BUSCAR_DOC`
+  Report with selection screen and ALV output for querying stored documents. Includes data consolidation from header and item tables and triggers SmartForms for printing.
+
+  Path:
+  `/1_src/ZFIR_BUSCAR_DOC`
+  `/2_docs/ZFIR_BUSCAR_DOC`
 
 - **SmartForms**  
-  Forms for printing documents from the ALV.  
-  Folders:  
-  - `/2_smartforms/ZFISF_DOC_KR_KZ`  
-  - `/2_smartforms/ZFISF_DOC_SA`
+  Forms for printing documents from the ALV.
+  
+  Path:  
+  `/2_docs/ZFISF_DOC_KR`
+  `/2_docs/ZFISF_DOC_KZ`  
+  `/2_docs/ZFISF_DOC_SA`
 
 - **ZFIP_FB01_AUTOM (Batch Input)**  
-  Automation process to simulate mass posting of financial documents.  
-  Folder: `/1_src/ZFIP_FB01_AUTOM`
+  Automation program that simulates mass document creation using BDCDATA and CALL TRANSACTION, including message handling via BDCMSGCOLL.
+
+  Path:
+  `/1_src/ZFIP_FB01_AUTOM`
+  `/2_docs/ZFIP_FB01_AUTOM`
 
 ## Technologies
-- ABAP
-- Module Pool (Dynpro)
+- ABAP (SAP NetWeaver 7.02)
+- Module Pool (Dynpro, PBO/PAI)
 - ALV (ABAP List Viewer)
 - SmartForms
-- Batch Input
+- Batch Input (BDC)
 - Open SQL
 - Data Dictionary (tables, data elements, domains)
 - Function Modules
 
-## Data Model & Technical Objects
+## Data Model
 Custom tables were created to simulate SAP FI structures and support the application logic.
 Examples:
 - ZBKPF (document header)
@@ -47,75 +68,12 @@ Also included:
 - Data elements and domains for data definition
 
 ## Functional Scenario
-1. Manually create financial documents.  
-2. Consult generated documents via ALV.  
-3. Print documents using SmartForms.  
-4. Automate mass document postings.
-
-## Screenshots
-"!!!
+- Manual document creation (Module Pool)
+- Storage in custom FI-like tables
+- Document retrieval via ALV report
+- Document printing via SmartForms
+- Mass document creation via Batch Input
 
 ## Author
 Fiorella Petrillo
 
-------------------------------------------
-
-# Gestión de Documentos Financieros en ABAP
-
-## Descripción
-Solución completa en ABAP para la gestión de documentos financieros en SAP, incluyendo carga manual, consulta, impresión y automatización de procesos.
-
-## Componentes del proyecto
-
-- **ZFIP_FB01 (Module Pool)**  
-  Transacción para la carga manual de documentos financieros, con validaciones de datos y lógica de negocio.  
-  Carpeta: `/1_src/ZFIP_FB01`
-
-- **ZFIR_BUSCAR_DOC (Reporte ALV)**  
-  Reporte con pantalla de selección para consultar documentos y visualizarlos en un ALV.  
-  Carpeta: `/1_src/ZFIR_BUSCAR_DOC`
-
-- **SmartForms**  
-  Formularios para imprimir los documentos desde el ALV.  
-  Carpetas:  
-  - `/2_smartforms/ZFISF_DOC_KR_KZ`  
-  - `/2_smartforms/ZFISF_DOC_SA`
-
-- **ZFIP_FB01_AUTOM (Batch Input)**  
-  Proceso de automatización para la carga masiva de documentos.  
-  Carpeta: `/1_src/ZFIP_FB01_AUTOM`
-
-## Tecnologías
-- ABAP
-- Module Pool (Dynpro)
-- ALV (ABAP List Viewer)
-- SmartForms
-- Batch Input
-- Open SQL
-- Diccionario de Datos (tablas, elementos de datos, dominios)
-- Módulos de Función
-
- ## Modelo de Datos y Objetos Técnicos
-Se crearon tablas personalizadas para simular estructuras de SAP FI y soportar la lógica del sistema.
-Ejemplos:
-- ZBKPF (cabecera de documento)
-- ZBSEG (posiciones del documento)
-- ZHKONT (cuentas)
-- ZT001, ZT003 (configuración)
-- ZPARAM (parametrización)
-
-También se desarrollaron:
-- Módulos de función reutilizables
-- Elementos de datos y dominios
-
-## Escenario funcional
-1. Crear documentos manualmente.  
-2. Consultar documentos generados mediante ALV.  
-3. Imprimir documentos con SmartForms.  
-4. Automatizar cargas masivas de documentos.
-
-## Capturas
-"!!!
-
-## Autor
-Fiorella Petrillo
