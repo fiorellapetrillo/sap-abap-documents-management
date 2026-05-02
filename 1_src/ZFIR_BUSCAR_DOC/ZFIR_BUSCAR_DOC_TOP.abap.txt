@@ -1,0 +1,124 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZFIR_BUSCAR_DOC_TOP
+*&---------------------------------------------------------------------*
+
+TABLES: zbkpf.
+
+*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*ESTRUCTURAS
+*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+TYPES: BEGIN OF ty_tabla_alv,
+         bukrs      TYPE zbkpf-bukrs, "Sociedad
+         butxt      TYPE zt001-butxt, "Nombre Sociedad
+         land1      TYPE zt001-land1, "Pais Sociedad
+         belnr      TYPE zbkpf-belnr, "Num Doc
+         gjhar      TYPE zbkpf-gjhar, "Año Fisscal
+         bldat      TYPE zbkpf-bldat, "Fecha Doc
+         budat      TYPE zbkpf-budat, "Fecha Posteo SAP
+         monat      TYPE zbkpf-monat, "Período Contable
+         blart      TYPE zbkpf-blart, "Tipo de Doc
+         bktxt_tipo TYPE zt003-bktxt, "Descripción Tipo de Doc
+         xblnr      TYPE zbkpf-xblnr, "Referencia
+         bktxt_doc  TYPE zbkpf-bktxt, "Texto de Cabecera
+         posnr      TYPE zbseg-posnr, "Num Posicion
+         hkont      TYPE zbseg-hkont, "Cuenta
+         txt50      TYPE zhkont-txt50,"Descripcion de Cuenta
+         datbi      TYPE zhkont-datbi,"Fecha Vencimiento de Cuenta
+         waers      TYPE zbseg-waers, "Moneda del Doc
+         dmbtr      TYPE zbseg-dmbtr, "Monto en moneda del Doc
+         waer2      TYPE zbseg-waer2, "Moneda local
+         wrbtr      TYPE zbseg-wrbtr, "Monto en moneda local
+         zfbdt      TYPE zbseg-zfbdt, "Vencimiento del Doc
+         sgtxt      TYPE zbseg-sgtxt, "Texto posición
+         zusch      TYPE string,      "Indicador de impuesto
+         msg        TYPE string,      "Mensajes de error
+         t_colores  TYPE slis_t_specialcol_alv, "Tabla con info. de colores para el ALV
+       END OF ty_tabla_alv,
+
+tt_tabla_alv TYPE STANDARD TABLE OF ty_tabla_alv,
+
+       BEGIN OF ty_zbkpf,
+         bukrs TYPE zbkpf-bukrs, "Sociedad
+         belnr TYPE zbkpf-belnr, "Num Doc
+         gjhar TYPE zbkpf-gjhar, "Año Fisscal
+         bldat TYPE zbkpf-bldat, "Fecha Doc
+         budat TYPE zbkpf-budat, "Fecha Posteo SAP
+         monat TYPE zbkpf-monat, "Período Contable
+         blart TYPE zbkpf-blart, "Tipo de Doc
+         xblnr TYPE zbkpf-xblnr, "Referencia
+         bktxt TYPE zbkpf-bktxt, "Texto de Cabecera
+       END OF ty_zbkpf,
+
+tt_zbkpf TYPE STANDARD TABLE OF ty_zbkpf,
+
+       BEGIN OF ty_zbseg,
+         bukrs TYPE zbseg-bukrs, "Num Doc
+         belnr TYPE zbseg-belnr, "Año Fisscal
+         gjhar TYPE zbseg-gjhar, "Fecha Doc
+         posnr TYPE zbseg-posnr, "Num Posicion
+         hkont TYPE zbseg-hkont, "Cuenta
+         shkzg TYPE zbseg-shkzg, "Indicador Debe/Haber
+         waers TYPE zbseg-waers, "Moneda del Doc
+         dmbtr TYPE zbseg-dmbtr, "Monto en moneda del Doc
+         waer2 TYPE zbseg-waer2, "Moneda local
+         wrbtr TYPE zbseg-wrbtr, "Monto en moneda local
+         zfbdt TYPE zbseg-zfbdt, "Vencimiento del Doc
+         sgtxt TYPE zbseg-sgtxt, "Texto posición
+         zusch TYPE zbseg-zusch, "Indicador de impuesto
+       END OF ty_zbseg,
+
+tt_zbseg TYPE STANDARD TABLE OF ty_zbseg,
+
+       BEGIN OF ty_zt001,
+         bukrs TYPE zt001-bukrs, "Sociedad
+         butxt TYPE zt001-butxt, "Nombre Sociedad
+         land1 TYPE zt001-land1, "Pais Sociedad
+         END OF ty_zt001,
+
+tt_zt001 TYPE STANDARD TABLE OF ty_zt001,
+
+       BEGIN OF ty_zt003,
+         blart TYPE zt003-blart, "Tipo de Doc
+         bktxt TYPE zt003-bktxt, "Descripción Tipo de Doc
+       END OF ty_zt003,
+
+tt_zt003 TYPE STANDARD TABLE OF ty_zt003,
+
+       BEGIN OF ty_zhkont,
+         skonto TYPE zhkont-skonto, "Cuenta
+         txt50  TYPE zhkont-txt50,  "Descripcion de Cuenta
+         datbi  TYPE zhkont-datbi,  "Fecha Vencimiento de Cuenta
+       END OF ty_zhkont,
+
+tt_zhkont TYPE STANDARD TABLE OF ty_zhkont.
+
+*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*DECLARACIONES
+*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+DATA: i_zbkpf  TYPE tt_zbkpf,
+      i_zt001  TYPE tt_zt001,
+      i_zt003  TYPE tt_zt003,
+      i_zhkont TYPE tt_zhkont,
+      i_zbseg  TYPE tt_zbseg,
+      i_alv    TYPE tt_tabla_alv.
+
+*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*PANTALLA DE SELECCION
+*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+SELECTION-SCREEN BEGIN OF BLOCK b1 WITH FRAME TITLE text-001.
+
+SELECTION-SCREEN SKIP 1.
+
+SELECT-OPTIONS: s_bukrs FOR zbkpf-bukrs, "Sociedad
+                s_gjhar FOR zbkpf-gjhar. "Año Fiscal
+
+SELECTION-SCREEN BEGIN OF BLOCK b2 WITH FRAME.
+SELECT-OPTIONS: s_belnr FOR zbkpf-belnr, "Num de Doc
+                s_blart FOR zbkpf-blart, "Tipo de Doc
+                s_xblnr FOR zbkpf-xblnr, "Referencia
+                s_waers FOR zbkpf-waers, "Moneda del Doc
+                s_bldat FOR zbkpf-bldat, "Fecha del Doc
+                s_budat FOR zbkpf-budat. "Fecha de posteo en sistema
+SELECTION-SCREEN END OF BLOCK b2.
+
+SELECTION-SCREEN END OF BLOCK b1.

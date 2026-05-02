@@ -1,0 +1,54 @@
+*&---------------------------------------------------------------------*
+*& Report  ZFIR_BUSCAR_DOC
+*&
+*&---------------------------------------------------------------------*
+* DR No.    :       CRQ0002                                            *
+* Program   :       ZFIR_BUSCAR_DOC                                    *
+* Title     :       Documentos Financieros                             *
+* Type      :       Executable Program                                 *
+* Created by:       Fiorella Petrillo                                  *
+* Transport Number: Local Object                                       *
+* Description:      Búsqueda de Documentos Financieros                 *
+************************************************************************
+*----------------------------------------------------------------------*
+* MODIFICATION LOGS                                                    *
+*----------------------------------------------------------------------*
+* Date     Modified by  Description  Transport Request  Change request *
+* ====    ===========  ===========   ================  ================*
+*----------------------------------------------------------------------*
+
+REPORT  zfir_buscar_doc.
+
+*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*INCLUDES
+*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INCLUDE zfir_buscar_doc_top.
+INCLUDE zfir_buscar_doc_f01.
+
+*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*INITIALIZATION
+*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INITIALIZATION.
+  "Limpieza de variables y tablas globales
+  PERFORM f_refresh.
+
+*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*AT SELECTION-SCREEN
+*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+AT SELECTION-SCREEN.
+  "Verificación de ingreso de datos para SOCIEDAD y AÑO FISCAL
+  PERFORM f_check_selection.
+
+*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*START-OF-SELECTION
+*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+START-OF-SELECTION.
+  "Selección de información desde tablas de base de datos
+  PERFORM f_select_data.
+
+  IF i_zbkpf IS NOT INITIAL.
+    "Construcción de la tabla final
+    PERFORM f_process_data.
+    "Construcción del reporte ALV
+    PERFORM f_alv_report.
+  ENDIF.
