@@ -67,6 +67,11 @@ Also included:
 - Function modules for reusable logic
 - Data elements and domains for data definition
 
+## Code Quality Controls
+- All development was validated using SAP standard tools to ensure code quality, consistency, and compliance with best practices:
+- SAP Code Inspector (SCI)
+- Extended Program Check (SLIN)
+
 ## Functional Scenario
 - Manual document creation (Module Pool)
 - Storage in custom FI-like tables
@@ -142,6 +147,11 @@ Fiorella Petrillo
 - También incluye:
   - Módulos de función para lógica reutilizable  
   - Elementos de datos y dominios para definición técnica  
+
+## Controles de calidad de código
+- Todo el desarrollo fue validado utilizando herramientas estándar de SAP para asegurar calidad, consistencia y cumplimiento de buenas prácticas:
+- SAP Code Inspector (SCI)
+- Extended Program Check (SLIN)
 
 ## Escenario funcional
 - Creación manual de documentos 
