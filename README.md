@@ -2,20 +2,24 @@
 ## Gestión de Documentos Contables en ABAP
 
 ## Descripción
-- Proyecto ABAP end-to-end que simula un proceso de gestión de documentos contables sobre un entorno de práctica. El proyecto cubre la creación, persistencia, consulta, impresión y automatización masiva de documentos, integrando múltiples componentes ABAP en un único flujo funcional.
+- Proyecto ABAP end-to-end que simula un proceso de gestión de documentos contables sobre un entorno de práctica. El desarrollo cubre la creación, persistencia, consulta, impresión y automatización masiva de documentos, integrando múltiples componentes ABAP en un único flujo funcional.
 
 ## Flujo funcional
 - El sistema está diseñado como un ciclo completo de vida del documento:
 
-- Desarrollo custom para creación de documentos (ZFIP_FB01) → Persistencia en tablas Z → Reporte para consulta (ZFIR_BUSCAR_DOC) y emisión mediante SmartForms → Automatización de carga masiva mediante archivos (ZFIP_FB01_AUTOM)
+  - Desarrollo custom para creación de documentos (ZFIP_FB01) → Persistencia en tablas Z → Reporte para consulta (ZFIR_BUSCAR_DOC) y emisión mediante SmartForms → Automatización de carga masiva mediante archivos (ZFIP_FB01_AUTOM)
  
 ## Componentes del proyecto
 
 - **ZFIP_FB01 (Module Pool)**  
   - Transacción para la creación manual de documentos contables utilizando pantallas Dynpro (PBO/PAI). Incluye validaciones, lógica de negocio y persistencia en tablas Z.  
-  - Carpetas:  
-    - `/1_src/ZFIP_FB01`  
-    - `/2_docs/ZFIP_FB01`  
+  - Código fuente y capturas:  
+    - [/1_src/ZFIP_FB01](./1_src/ZFIP_FB01)  
+    - [/2_docs/ZFIP_FB01](./2_docs/ZFIP_FB01)
+   <img width="1191" height="580" alt="zfip_fb01_screen_0100" src="https://github.com/user-attachments/assets/ce316540-e921-4311-8983-d543ad54a0eb" />
+
+
+      
 
 - **ZFIR_BUSCAR_DOC (ALV Report)**  
   - Reporte con pantalla de selección y salida ALV para consulta de documentos almacenados. Incluye consolidación de datos de cabecera y posiciones, y dispara SmartForms para emisión documental.  
