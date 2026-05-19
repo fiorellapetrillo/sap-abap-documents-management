@@ -74,7 +74,7 @@ FORM f_select_data .
       SORT i_zt001 BY bukrs.
     ENDIF.
 
-    "Obtener de información adicional de los tipos de documentos
+    "Obtener información adicional de los tipos de documentos
     li_zbkpf_aux[] = i_zbkpf[].
     SORT li_zbkpf_aux BY blart.
     DELETE ADJACENT DUPLICATES FROM li_zbkpf_aux COMPARING blart.
@@ -234,7 +234,7 @@ FORM f_process_data .
           lwa_alv-zusch = 'Si'.
         ENDIF.
 
-        "Mostrar el monto en negativo si la posisción es DEBE
+        "Mostrar el monto en negativo si la posición es DEBE
         IF <lfs_zbseg>-shkzg EQ 'S'.
           lwa_alv-dmbtr     = <lfs_zbseg>-dmbtr * -1.
           lwa_alv-wrbtr     = <lfs_zbseg>-wrbtr * -1.
@@ -262,7 +262,7 @@ FORM f_process_data .
           "No se ha encontrado datos de la cuenta &
           MESSAGE s003(zfir_bus_doc_msg) WITH lwa_alv-hkont INTO lv_msg.
 
-          "Construcción del mesnsaje en la estructura del ALV
+          "Construcción del mensaje en la estructura del ALV
           IF lwa_alv-msg IS INITIAL.
             lwa_alv-msg = lv_msg.
           ELSE.
@@ -271,7 +271,7 @@ FORM f_process_data .
           lv_celda_amarilla = abap_true.
         ENDIF. "READ TABLE i_zhkont ASSIGNING <lfs_zhkont>
 
-        "Configuación de color para la columna de ERRORES
+        "Configuración de color para la columna de ERRORES
         IF lv_celda_amarilla = abap_true.
           lwa_colores-fieldname = 'MSG'.
           lwa_colores-color-col = 3.  "Amarillo
@@ -281,13 +281,13 @@ FORM f_process_data .
 
         "Guardar registro en tabla de ALV
         APPEND lwa_alv TO i_alv.
-      ENDLOOP. "LOOP AT gt_zbseg
+      ENDLOOP. "LOOP AT i_zbseg
 
     ELSE.
       "No se ha encontrado posiciones para este documento
       MESSAGE s004(zfir_bus_doc_msg) INTO lv_msg.
 
-      "Contrucción del mensaje en la estructura del ALV
+      "Construcción del mensaje en la estructura del ALV
       IF lwa_alv-msg IS INITIAL.
         lwa_alv-msg = lv_msg.
       ELSE.
@@ -305,8 +305,8 @@ FORM f_process_data .
 
       "Guardar registro de cabecera sin posiciones a la tabla del ALV
       APPEND lwa_alv TO i_alv.
-    ENDIF. "READ TABLE gt_zbseg
-  ENDLOOP. "LOOP AT gt_zbkpf
+    ENDIF. "READ TABLE i_zbseg
+  ENDLOOP. "LOOP AT i_zbkpf
 
 ENDFORM.                    " F_PROCESS_DATA
 *&---------------------------------------------------------------------*
@@ -346,7 +346,7 @@ FORM f_alv_report .
       program_error            = 1
       OTHERS                   = 2.
   IF sy-subrc NE 0.
-    "Error al general el ALV
+    "Error al generar el ALV
     MESSAGE e005(zfir_bus_doc_msg).
   ENDIF.
 
