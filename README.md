@@ -16,7 +16,7 @@
   - Código fuente y capturas:  
     - [/1_src/ZFIP_FB01](./1_src/ZFIP_FB01)  
     - [/2_docs/ZFIP_FB01](./2_docs/ZFIP_FB01)
-   <img width="1191" height="580" alt="zfip_fb01_screen_0100" src="https://github.com/user-attachments/assets/ce316540-e921-4311-8983-d543ad54a0eb" />
+   <img width="600" alt="zfip_fb01_screen_0100" src="https://github.com/user-attachments/assets/ce316540-e921-4311-8983-d543ad54a0eb" />
 
 
       
