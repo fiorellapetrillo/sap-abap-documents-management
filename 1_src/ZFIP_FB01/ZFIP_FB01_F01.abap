@@ -245,7 +245,7 @@ FORM f_validaciones_campos_0200 .
   TRANSPORTING NO FIELDS.
 
   IF sy-subrc EQ 0.
-    "Si se presionó BACK y se cambiaron datos, modificar el registro corresponediente
+    "Si se presionó BACK y se cambiaron datos, modificar el registro correspondiente
     MODIFY i_zbseg FROM wa_zbseg INDEX sy-tabix.
   ELSE.
     "Si es una posicion nueva, se agrega el registro nuevo
@@ -285,7 +285,7 @@ FORM f_validaciones_0300 .
   ENDIF.
 
 *--------------------------------------------------------------------------------
-*Generación del número de documento a travez de un objeto numerador
+*Generación del número de documento a través de un objeto numerador
 
   "Obtener el año fiscal desde la fecha del doc
   zbkpf-gjhar = zbkpf-bldat+0(4).
@@ -374,7 +374,7 @@ ENDFORM.                    " F_VALIDACIONES_0300
 *&---------------------------------------------------------------------*
 *&      Form  F_VALIDACIONES_SIGNO_CUENTA
 *&---------------------------------------------------------------------*
-*     VALIDAR SIGNO Y NUMEOR DE CUENTA DE LA POSICIÓN
+*     VALIDAR SIGNO Y NUMERO DE CUENTA DE LA POSICIÓN
 *----------------------------------------------------------------------*
 *  -->  p1        text
 *  <--  p2        text
@@ -403,7 +403,7 @@ FORM f_validaciones_signo_cuenta .
     IMPORTING
       output = zbseg-hkont.
 
-  "Obtener datos adicionales de la cuena ingresada
+  "Obtener datos adicionales de la cuenta ingresada
   SELECT SINGLE skonto bukrs datbi
     FROM zhkont
     INTO (lv_skonto, lv_bukrs, lv_datbi)
@@ -426,7 +426,7 @@ ENDFORM.                    " F_VALIDACIONES_SIGNO_CUENTA
 *&---------------------------------------------------------------------*
 *&      Form  F_RETENCION_IMP_0200
 *&---------------------------------------------------------------------*
-*     CÁLCULAR LA RETENCIÓN DE IMPUESTOS PARA DOCUMENTOS KZ
+*     CALCULAR LA RETENCIÓN DE IMPUESTOS PARA DOCUMENTOS KZ
 *----------------------------------------------------------------------*
 *  -->  p1        text
 *  <--  p2        text
@@ -539,7 +539,7 @@ FORM f_retencion_imp_0200 .
 
 ENDFORM.                    " F_RETENCION_IMP_0200
 *&---------------------------------------------------------------------*
-*&      Form  F_CONCATENAR_PAGADO_0300
+*&      Form  F_CONCATENAR_PAGADO_0100
 *&---------------------------------------------------------------------*
 *   MARCAR COMO PAGADO LOS DOC KR CON LA MISMA REFERENCIA
 *----------------------------------------------------------------------*
@@ -589,7 +589,7 @@ FORM f_recuperar_montos_originales .
       CONTINUE.
     ENDIF.
 
-    "Si cumple las condiciones para haberse aplicado al retención
+    "Si cumple las condiciones para haberse aplicado la retención
     IF   wa_zbkpf-blart = 'KZ'
      AND wa_zbseg-shkzg = 'H'
      AND wa_zbseg-zusch = 'X'.
@@ -597,7 +597,7 @@ FORM f_recuperar_montos_originales .
       "Cálculo para obtener los montos originales
       lv_ret_back = 1 - ( v_porcent_ret / 100 ).
 
-      "Mdificar los montos en la posicion
+      "Modificar los montos en la posicion
       wa_zbseg-wrbtr = wa_zbseg-wrbtr / lv_ret_back.
       wa_zbseg-dmbtr = wa_zbseg-dmbtr / lv_ret_back.
 
