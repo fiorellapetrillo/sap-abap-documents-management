@@ -94,7 +94,7 @@ BEGIN OF ty_pos_bi,     "Estructura para los datos de posiciones listos para el 
          shkzg           TYPE zbseg-shkzg,  "Signo posición
          skonto          TYPE zbseg-hkont,  "Número de cuenta
          dmbtr           TYPE zbseg-dmbtr,  "Monto
-         sgtxt           TYPE zbseg-sgtxt,  "Texo posición
+         sgtxt           TYPE zbseg-sgtxt,  "Texto posición
          zfbdt           TYPE zbseg-zfbdt,  "Fecha de vencimiento
          zusch           TYPE zbseg-zusch,  "Indicador de impuesto
          nombre_arch(50) TYPE c,            "Nombre del archivo
@@ -110,7 +110,7 @@ BEGIN OF ty_tabla_alv,      "Estructura de la tabla final para el ALV
        bukrs           TYPE zbkpf-bukrs, "Sociedad SAP
        gjhar           TYPE zbkpf-gjhar, "Año Fiscal
        blart           TYPE zbkpf-blart, "Tipo de documento SAP
-       semaforo(4)     TYPE c,           "Verde o Rojo según Exito o Error
+       semaforo(4)     TYPE c,           "Verde o Rojo según Éxito o Error
        belnr(10)       TYPE c,           "Número de Documento SAP creado
        mensaje         TYPE string,      "Descripción del resultado
        gt_colores      TYPE slis_t_specialcol_alv, "Tabla interna de colores del ALV
