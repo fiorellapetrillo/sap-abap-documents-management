@@ -38,7 +38,7 @@ ENDMODULE.                 " USER_COMMAND_0100  INPUT
 *&---------------------------------------------------------------------*
 *&      Module  USER_COMMAND_0200  INPUT
 *&---------------------------------------------------------------------*
-*  MANEJO DE ACCIONES DEL USUARIO EN LA PANTALLA DE CARGA DE POSICIONES                                                                                                                        MANEJO DE ACCIONES DEL USUARIO EN LA PANTALLA DE CARGA DE
+*  MANEJO DE ACCIONES DEL USUARIO EN LA PANTALLA DE CARGA DE POSICIONES
 *----------------------------------------------------------------------*
 MODULE user_command_0200 INPUT.
 
@@ -102,7 +102,7 @@ MODULE user_command_0200 INPUT.
       PERFORM f_calculo_dinamico_monto_local.
       PERFORM f_validaciones_campos_0200.
 
-      "Para los doc KZ que no se le aplicó la ret de imp
+      "Para los doc KZ a los que no se les aplicó la ret de imp
       IF wa_zbkpf-blart = 'KZ' AND v_flag_retencion IS INITIAL.
         v_flag_retencion = 'X'.
         "Aplicación de ret de imp
