@@ -7,7 +7,7 @@
 ## Flujo funcional
 - El sistema está diseñado como un ciclo completo de vida del documento:
 
-  - Desarrollo custom para creación de documentos (ZFIP_FB01) → Persistencia en tablas Z → Reporte para consulta (ZFIR_BUSCAR_DOC) y emisión mediante SMARTFORMS → Automatización de carga masiva mediante archivos (ZFIP_FB01_AUTOM)
+  - Desarrollo custom para creación de documentos (`ZFIP_FB01`) → Persistencia en tablas Z → Reporte para consulta (`ZFIR_BUSCAR_DOC`) y emisión mediante `SMARTFORMS` → Automatización de carga masiva mediante archivos (`ZFIP_FB01_AUTOM`)
  
 ## Componentes del proyecto
 
