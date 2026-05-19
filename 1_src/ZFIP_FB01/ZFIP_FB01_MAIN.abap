@@ -4,11 +4,11 @@
 *&---------------------------------------------------------------------*
 * DR No.    :       CRQ0001                                            *
 * Program   :       ZFIP_FB01                                          *
-* Title     :       Generación de Documentos FI                        *
+* Title     :       Generación de Documentos Contables                 *
 * Type      :       Module Pool                                        *
 * Created by:       Fiorella Petrillo                                  *
 * Transport Number: Local Object                                       *
-* Description:      Creación de Documentos Financieros                 *
+* Description:      Creación de Documentos Contables                   *
 ************************************************************************
 *----------------------------------------------------------------------*
 * MODIFICATION LOGS                                                    *
