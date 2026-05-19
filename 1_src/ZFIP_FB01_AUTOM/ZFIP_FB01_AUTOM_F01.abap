@@ -388,19 +388,19 @@ ENDFORM.                    " F_UPLOAD
 *----------------------------------------------------------------------*
 FORM f_move_al11_file  USING    p_lv_serv_path.
 
-  DATA:   lv_error      TYPE string,
-          lv_origen     TYPE string,
-          lv_destino    TYPE string,
-          lv_oscmd(300) TYPE c,
-          li_return     TYPE STANDARD TABLE OF char80,
-          lv_filename   TYPE string,
-          lv_path_lenth TYPE i.
+  DATA:   lv_error       TYPE string,
+          lv_origen      TYPE string,
+          lv_destino     TYPE string,
+          lv_oscmd(300)  TYPE c,
+          li_return      TYPE STANDARD TABLE OF char80,
+          lv_filename    TYPE string,
+          lv_path_length TYPE i.
 
   "Calcular la cantidad de caracteres de p_path2
-  lv_path_lenth = strlen( p_path2 ).
+  lv_path_length = strlen( p_path2 ).
 
   "Obtener el nombre de archivo desde p_lv_serv_path usando offset
-  lv_filename = p_lv_serv_path+lv_path_lenth. "lv_filename = archivo001.txt
+  lv_filename = p_lv_serv_path+lv_path_length. "lv_filename = archivo001.txt
 
 
   CONCATENATE '"'  p_lv_serv_path       '"' INTO lv_origen.
@@ -960,7 +960,7 @@ FORM f_process_data .
         lwa_pos_check-shkzg       = lv_shkzg.                    "Signo posición
         lwa_pos_check-skonto      = lv_skonto.                   "Número de cuenta
         lwa_pos_check-dmbtr       = lv_dmbtr.                    "Monto
-        lwa_pos_check-sgtxt       = lv_sgtxt.                    "Texo Posición
+        lwa_pos_check-sgtxt       = lv_sgtxt.                    "Texto Posición
         lwa_pos_check-zfbdt       = lv_zfbdt.                    "Fecha de Vencimiento
         lwa_pos_check-zusch       = lv_zusch.                    "Indicador de impuesto
         lwa_pos_check-nombre_arch = <lfs_i_pos>-nombre_arch.     "Nombre del archivo
@@ -968,7 +968,7 @@ FORM f_process_data .
 
         APPEND lwa_pos_check TO li_pos_check.
 
-      ENDLOOP. "LOOP AT i_pos ASSIGNING <fs_pos>
+      ENDLOOP. "LOOP AT i_pos ASSIGNING <lfs_i_pos>
 
     ELSE.
       lv_count = 0.
@@ -1144,7 +1144,7 @@ FORM f_bi_zfip_fb01 .
         PERFORM bdc_field USING 'BDC_OKCODE' '=POST'.
       ENDIF.
 
-    ENDLOOP. "LOOP AT li_pos_aux ASSIGNING <lfs_pos_aux>
+    ENDLOOP. "LOOP AT li_pos_aux ASSIGNING <lfs_pos_curr>
 
 *********************************************
     "Pantalla final (resumen)
@@ -1154,7 +1154,7 @@ FORM f_bi_zfip_fb01 .
 
     CALL TRANSACTION 'ZFIT_FB01' USING i_bdcdata
                                  MODE  p_modo     "modo invisible
-                                 UPDATE 'S'       "actualización sincronica
+                                 UPDATE 'S'       "actualización sincrónica
                                  MESSAGES INTO i_messtab.
 
 
@@ -1222,7 +1222,7 @@ FORM f_bi_zfip_fb01 .
     "Guardar en tabla del ALV
     APPEND wa_alv TO i_alv.
 
-  ENDLOOP. "LOOP AT i_cab_bi INTO lwa_cab.
+  ENDLOOP. "LOOP AT i_cab_bi ASSIGNING <lfs_cab_bi>
 
 ENDFORM.                    " F_BI_ZFIP_FB01
 *&---------------------------------------------------------------------*
@@ -1231,7 +1231,7 @@ ENDFORM.                    " F_BI_ZFIP_FB01
 *     DEFINICIÓN DEL INICIO DE UNA NUEVA PANTALLA
 *----------------------------------------------------------------------*
 *      -->p_program   Nombre del programa    (1662)
-*      -->p_dynpro    Numero de screen       (1663)
+*      -->p_dynpro    Número de screen       (1663)
 *----------------------------------------------------------------------*
 FORM bdc_dynpro  USING     p_program                        "ZFIP_FB01
                            p_dynpro.                        "0100
@@ -1249,7 +1249,7 @@ ENDFORM.                    " BDC_DYNPRO
 *   ASIGNACIÓN DE VALORES A LOS CAMPOS EN LA PANTALLA ACTIVA
 *----------------------------------------------------------------------*
 *      -->p_field   Fieldname 'BDC_OKCODE'
-*      -->p_value   Accion 'GO' / 'POST' / etc.
+*      -->p_value   Acción 'GO' / 'POST' / etc.
 *----------------------------------------------------------------------*
 FORM bdc_field  USING    p_field
                          p_value.
@@ -1538,7 +1538,7 @@ FORM f_create_error_log .
 
       ENDAT.
 
-      "Contrucción de la línea del log
+      "Construcción de la línea del log
       CONCATENATE <lfs_alv_aux>-nombre_arch
                   <lfs_alv_aux>-belnr_ext
                   <lfs_alv_aux>-linea_cab
@@ -1557,7 +1557,7 @@ FORM f_create_error_log .
         CLOSE DATASET lv_file.
       ENDAT.
 
-    ENDLOOP. "LOOP AT i_alv ASSIGNING <lfs_alv>.
+    ENDLOOP. "LOOP AT i_alv ASSIGNING <lfs_alv_aux>.
   ENDIF. "IF li_alv_aux IS NOT INITIAL.
 
 ENDFORM.                    " F_CREATE_ERROR_LOG
