@@ -10,9 +10,9 @@ TABLES: zbkpf.
 TYPES: BEGIN OF ty_tabla_alv,
          bukrs      TYPE zbkpf-bukrs, "Sociedad
          butxt      TYPE zt001-butxt, "Nombre Sociedad
-         land1      TYPE zt001-land1, "Pais Sociedad
+         land1      TYPE zt001-land1, "País Sociedad
          belnr      TYPE zbkpf-belnr, "Num Doc
-         gjhar      TYPE zbkpf-gjhar, "Año Fisscal
+         gjhar      TYPE zbkpf-gjhar, "Año Fiscal
          bldat      TYPE zbkpf-bldat, "Fecha Doc
          budat      TYPE zbkpf-budat, "Fecha Posteo SAP
          monat      TYPE zbkpf-monat, "Período Contable
@@ -20,9 +20,9 @@ TYPES: BEGIN OF ty_tabla_alv,
          bktxt_tipo TYPE zt003-bktxt, "Descripción Tipo de Doc
          xblnr      TYPE zbkpf-xblnr, "Referencia
          bktxt_doc  TYPE zbkpf-bktxt, "Texto de Cabecera
-         posnr      TYPE zbseg-posnr, "Num Posicion
+         posnr      TYPE zbseg-posnr, "Num Posición
          hkont      TYPE zbseg-hkont, "Cuenta
-         txt50      TYPE zhkont-txt50,"Descripcion de Cuenta
+         txt50      TYPE zhkont-txt50,"Descripción de Cuenta
          datbi      TYPE zhkont-datbi,"Fecha Vencimiento de Cuenta
          waers      TYPE zbseg-waers, "Moneda del Doc
          dmbtr      TYPE zbseg-dmbtr, "Monto en moneda del Doc
