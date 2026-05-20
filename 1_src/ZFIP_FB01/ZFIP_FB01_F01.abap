@@ -523,13 +523,13 @@ FORM f_retencion_imp_0200 .
 
           CALL SCREEN 0200.
 
-        ELSE. "SELECT SINGLE valor_salida INTO v_texto_pos_imp
+        ELSE. "READ TABLE i_zparam INTO wa_zparam
           MESSAGE a034(zfip_fb01_msg). "NO SE ENCONTRO EL VALOR DE SALIDA DE TEXTO_POS_IMP, VER TABLA ZPARAM
-        ENDIF. "SELECT SINGLE valor_salida INTO v_texto_pos_imp
+        ENDIF. "READ TABLE i_zparam INTO wa_zparam
 
-      ELSE. "SELECT SINGLE valor_salida INTO v_porcent_ret
+      ELSE. "READ TABLE i_zparam INTO wa_zparam
         MESSAGE a038(zfip_fb01_msg). "NO SE ENCONTRO EL PORCENTAJE DE IMPUESTO, VER TABLA ZPARAM
-      ENDIF. "SELECT SINGLE valor_salida INTO v_porcent_ret
+      ENDIF. "READ TABLE i_zparam INTO wa_zparam
 
     ELSE. "SELECT SINGLE skonto INTO lv_cuenta_ret
       MESSAGE a037(zfip_fb01_msg). "NO SE ENCONTRO LA CUENTA DE RETENCION DE IMPUESTOS
