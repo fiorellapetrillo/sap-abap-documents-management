@@ -2,7 +2,7 @@
 # Gestión de Documentos Contables en ABAP
 
 ## Descripción
-- Proyecto ABAP end-to-end que simula un proceso de gestión de documentos contables sobre un entorno de práctica. El desarrollo cubre la creación, persistencia, consulta, impresión y automatización masiva de documentos, integrando múltiples componentes ABAP en un único flujo funcional.
+- Proyecto ABAP end-to-end que simula un proceso de gestión de documentos contables sobre un entorno SAP de práctica. El desarrollo cubre la creación, persistencia, consulta, impresión y automatización masiva de documentos, integrando múltiples componentes ABAP en un único flujo funcional.
 
 ## Flujo funcional
 - El sistema está diseñado como un ciclo completo de vida del documento:
@@ -31,7 +31,7 @@
 
 
 - **SmartForms**  
-  - Formularios para la impresión de documentos desde el ALV.  
+  - Formularios para la emisión de documentos desde el ALV.  
   - Capturas:  
     - [/2_docs/ZFISF_DOC_KR](2_docs/SMARTFORMS/ZFISF_DOC_KR_KZ(KR).png)  
     - [/2_docs/ZFISF_DOC_KZ](2_docs/SMARTFORMS/ZFISF_DOC_KR_KZ(KZ).png)  
@@ -54,13 +54,13 @@
 - Batch Input (BDC)  
 - Open SQL  
 - Diccionario de Datos (tablas, elementos de datos, dominios)  
-- Módulos de Función
-- Vistas de mantenimiento (SM30)
-- Clases de mensajes (SE91)
-- Objetos de rango numérico (SNRO)
+- Módulos de Función (SE37)
+- Vistas de Mantenimiento (SM30)
+- Clases de Mensajes (SE91)
+- Objetos de Rango Numérico (SNRO)
 
 ## Modelo de datos
-- Para sustentar la lógica de la aplicación en el entorno de práctica NetWeaver 7.02, se modelaron tablas propias basadas en el estándar de SAP:
+- Para sustentar la lógica de la aplicación en el entorno SAP de práctica NetWeaver 7.02, se modelaron tablas propias basadas en el estándar de SAP:
 
 ### 1. Tablas de Datos Maestros y Configuración
 * `ZHKONT`: Maestro de cuentas contables (catálogo de cuentas)
@@ -87,7 +87,7 @@
 # Accounting Document Management in ABAP
 
 ## Description
-- End-to-end ABAP project that simulates an accounting document management process on a practice environment. The development covers document creation, persistence, query, printing, and mass automation, integrating multiple ABAP components into a single functional workflow.
+- End-to-end ABAP project that simulates an accounting document management process on a SAP practice environment. The development covers document creation, persistence, query, printing, and mass automation, integrating multiple ABAP components into a single functional workflow.
 
 ## Functional Workflow
 - The system is designed as a complete document lifecycle:
@@ -137,13 +137,13 @@
 - Batch Input (BDC)  
 - Open SQL  
 - Data Dictionary (Tables, Data Elements, Domains)  
-- Function Modules
+- Function Modules (SE37)
 - Maintenance views (SM30)
 - Message classes (SE91)
 - Number range objects (SNRO)
 
 ## Data Model
-- To support the application logic in the NetWeaver 7.02 practice environment, custom tables were modeled based on the SAP standard:
+- To support the application logic in the SAP NetWeaver 7.02 practice environment, custom tables were modeled based on the SAP standard:
 
 ### 1. Master Data and Configuration Tables
 * `ZHKONT`: G/L Account Master (Chart of Accounts)
