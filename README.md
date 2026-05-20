@@ -16,9 +16,9 @@
   - Código fuente y capturas:  
     - [/1_src/ZFIP_FB01](./1_src/ZFIP_FB01)  
     - [/2_docs/ZFIP_FB01](./2_docs/ZFIP_FB01)
-<img width="500" alt="zfip_fb01_screen_0100" src="https://github.com/user-attachments/assets/ce316540-e921-4311-8983-d543ad54a0eb" />
-<img width="500" alt="zfip_fb01_screen_0200" src="https://github.com/user-attachments/assets/11199017-d427-43c8-90c6-3f27f55a41e9" />
-<img width="500" alt="zfip_fb01_screen_0300" src="https://github.com/user-attachments/assets/a14f9fd2-71d0-411d-9b52-c07aa6a96f88" />
+<img width="400" alt="zfip_fb01_screen_0100" src="https://github.com/user-attachments/assets/ce316540-e921-4311-8983-d543ad54a0eb" />
+<img width="400" alt="zfip_fb01_screen_0200" src="https://github.com/user-attachments/assets/11199017-d427-43c8-90c6-3f27f55a41e9" />
+<img width="400" alt="zfip_fb01_screen_0300" src="https://github.com/user-attachments/assets/a14f9fd2-71d0-411d-9b52-c07aa6a96f88" />
    
 - **ZFIR_BUSCAR_DOC (ALV Report)**  
   - Reporte con pantalla de selección y salida ALV para consulta de documentos almacenados. Incluye consolidación de datos de cabecera y posiciones, y dispara SmartForms para emisión documental.  
@@ -75,13 +75,6 @@
 - SAP Code Inspector (SCI)
 - Extended Program Check (SLIN)
 
-## Escenario funcional
-- Creación manual de documentos 
-- Almacenamiento en tablas
-- Consulta de documentos mediante reporte ALV  
-- Impresión de documentos mediante SmartForms  
-- Creación masiva mediante Batch Input  
-
 ## Autor
 - Fiorella Petrillo
 
@@ -103,9 +96,9 @@
   - Source code and screenshots:  
     - [/1_src/ZFIP_FB01](./1_src/ZFIP_FB01)  
     - [/2_docs/ZFIP_FB01](./2_docs/ZFIP_FB01)
-<img width="500" alt="zfip_fb01_screen_0100" src="https://github.com/user-attachments/assets/ce316540-e921-4311-8983-d543ad54a0eb" />
-<img width="500" alt="zfip_fb01_screen_0200" src="https://github.com/user-attachments/assets/11199017-d427-43c8-90c6-3f27f55a41e9" />
-<img width="500" alt="zfip_fb01_screen_0300" src="https://github.com/user-attachments/assets/a14f9fd2-71d0-411d-9b52-c07aa6a96f88" />
+<img width="400" alt="zfip_fb01_screen_0100" src="https://github.com/user-attachments/assets/ce316540-e921-4311-8983-d543ad54a0eb" />
+<img width="400" alt="zfip_fb01_screen_0200" src="https://github.com/user-attachments/assets/11199017-d427-43c8-90c6-3f27f55a41e9" />
+<img width="400" alt="zfip_fb01_screen_0300" src="https://github.com/user-attachments/assets/a14f9fd2-71d0-411d-9b52-c07aa6a96f88" />
    
 - **ZFIR_BUSCAR_DOC (ALV Report)**  
   - Report with selection screen and ALV grid output for querying stored documents. Includes consolidation of header and line item data, and triggers SmartForms for document printing.  
@@ -161,13 +154,6 @@
 - The entire development was validated using standard SAP tools to ensure quality, consistency, and compliance with best practices:
 - SAP Code Inspector (SCI)
 - Extended Program Check (SLIN)
-
-## Functional Scenario
-- Manual document creation 
-- Data persistence in custom tables
-- Document query via ALV report  
-- Document printing via SmartForms  
-- Mass document creation via Batch Input  
 
 ## Author
 - Fiorella Petrillo
