@@ -27,7 +27,7 @@
     - [/1_src/ZFIR_BUSCAR_DOC](./1_src/ZFIR_BUSCAR_DOC)  
     - [/2_docs/ZFIR_BUSCAR_DOC](./2_docs/ZFIR_BUSCAR_DOC)  
 <img width="400" alt="zfir_buscar_doc_selection_screen" src="https://github.com/user-attachments/assets/2cb281f1-795b-4971-8328-ace8fb9ec7f2" />
-<img width="400" height="726" alt="CASO ERRORES Y EXITOSOS" src="https://github.com/user-attachments/assets/e43fab8e-9ec0-4619-82a8-eca5ee914f68" />
+<img width="400" alt="CASO ERRORES Y EXITOSOS" src="https://github.com/user-attachments/assets/e43fab8e-9ec0-4619-82a8-eca5ee914f68" />
 
 
 - **SmartForms**  
@@ -106,7 +106,7 @@
 <img width="400" alt="zfip_fb01_screen_0300" src="https://github.com/user-attachments/assets/a14f9fd2-71d0-411d-9b52-c07aa6a96f88" />
    
 - **ZFIR_BUSCAR_DOC (ALV Report)**  
-  - Report with selection screen and ALV grid output for querying stored documents. Includes consolidation of header and line item data, and triggers SmartForms for document printing.  
+  - Report with selection screen and ALV grid output for querying process documents. Includes consolidation of header and line item data, and triggers SmartForms for document printing.  
   - Source code and screenshots:  
     - [/1_src/ZFIR_BUSCAR_DOC](./1_src/ZFIR_BUSCAR_DOC)  
     - [/2_docs/ZFIR_BUSCAR_DOC](./2_docs/ZFIR_BUSCAR_DOC)  
@@ -122,22 +122,25 @@
    <img width="500" alt="ZFISF_DOC_KR_KZ(2)" src="https://github.com/user-attachments/assets/63fdc735-8c19-461a-b156-e1be760902de" />
      
 - **ZFIP_FB01_AUTOM (Batch Input)**  
-  - Automation program that simulates mass document upload using BDCDATA and CALL TRANSACTION, including message handling via BDCMSGCOLL.  
+  - Mass data load automation program via TXT file reading from frontend / application server (AL11) and processing via BDC / Batch Input with CALL TRANSACTION.  
   - Source code and screenshots:  
     - [/1_src/ZFIP_FB01_AUTOM](./1_src/ZFIP_FB01_AUTOM)  
     - [/2_docs/ZFIP_FB01_AUTOM](./2_docs/ZFIP_FB01_AUTOM)  
 <img width="500" alt="zfip_fb01_autom_selection_screen_1" src="https://github.com/user-attachments/assets/3574595b-83d6-4c63-81e4-8bec33a00026" />
-<img width="500" alt="zfip_fb01_autom_success" src="https://github.com/user-attachments/assets/638364bf-3d01-438b-af69-0481e94dfb3f" />
+<img width="400" alt="CASO ERRORES Y EXITOSOS" src="https://github.com/user-attachments/assets/e43fab8e-9ec0-4619-82a8-eca5ee914f68" />
 
 ## Technologies
-- ABAP (SAP NetWeaver 7.02)  
+- ABAP 
 - Module Pool (Dynpro, PBO/PAI)  
 - ALV (ABAP List Viewer)  
 - SmartForms  
 - Batch Input (BDC)  
 - Open SQL  
 - Data Dictionary (Tables, Data Elements, Domains)  
-- Function Modules  
+- Function Modules
+- Maintenance views (SM30)
+- Message classes (SE91)
+- Number range objects (SNRO)
 
 ## Data Model
 - To support the application logic in the NetWeaver 7.02 practice environment, custom tables were modeled based on the SAP standard:
