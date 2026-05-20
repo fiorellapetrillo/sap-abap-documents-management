@@ -42,8 +42,8 @@
   - Código fuente y capturas:  
     - [/1_src/ZFIP_FB01_AUTOM](./1_src/ZFIP_FB01_AUTOM)  
     - [/2_docs/ZFIP_FB01_AUTOM](./2_docs/ZFIP_FB01_AUTOM)  
-<img width="500" alt="zfip_fb01_autom_selection_screen_1" src="https://github.com/user-attachments/assets/3574595b-83d6-4c63-81e4-8bec33a00026" />
-<img width="400" alt="CASO ERRORES Y EXITOSOS" src="https://github.com/user-attachments/assets/e43fab8e-9ec0-4619-82a8-eca5ee914f68" />
+<img width="400" alt="zfip_fb01_autom_selection_screen_1" src="https://github.com/user-attachments/assets/07ee64e8-4960-4405-b7b9-cf6f157354c8" />
+<img width="400"  alt="zfip_fb01_autom_results" src="https://github.com/user-attachments/assets/bcf9b700-114f-45b0-a875-d80ee1369be9" />
 
 ## Tecnologías
 - ABAP 
@@ -118,15 +118,15 @@
     - [/2_docs/ZFISF_DOC_KR](./2_docs/ZFISF_DOC_KR)  
     - [/2_docs/ZFISF_DOC_KZ](./2_docs/ZFISF_DOC_KZ)  
     - [/2_docs/ZFISF_DOC_SA](./2_docs/ZFISF_DOC_SA)
-   <img width="500" alt="ZFISF_DOC_KR_KZ(2)" src="https://github.com/user-attachments/assets/63fdc735-8c19-461a-b156-e1be760902de" />
+   <img width="400" alt="ZFISF_DOC_KR_KZ(2)" src="https://github.com/user-attachments/assets/06744119-6da7-4f69-8e37-2e402aab2e8e" />
      
 - **ZFIP_FB01_AUTOM (Batch Input)**  
   - Mass data load automation program via TXT file reading from frontend / application server (AL11) and processing via BDC / Batch Input with CALL TRANSACTION.  
   - Source code and screenshots:  
     - [/1_src/ZFIP_FB01_AUTOM](./1_src/ZFIP_FB01_AUTOM)  
     - [/2_docs/ZFIP_FB01_AUTOM](./2_docs/ZFIP_FB01_AUTOM)  
-<img width="500" alt="zfip_fb01_autom_selection_screen_1" src="https://github.com/user-attachments/assets/3574595b-83d6-4c63-81e4-8bec33a00026" />
-<img width="400" alt="CASO ERRORES Y EXITOSOS" src="https://github.com/user-attachments/assets/e43fab8e-9ec0-4619-82a8-eca5ee914f68" />
+<img width="400" alt="zfip_fb01_autom_selection_screen_1" src="https://github.com/user-attachments/assets/07ee64e8-4960-4405-b7b9-cf6f157354c8" />
+<img width="400"  alt="zfip_fb01_autom_results" src="https://github.com/user-attachments/assets/bcf9b700-114f-45b0-a875-d80ee1369be9" />
 
 ## Technologies
 - ABAP 
