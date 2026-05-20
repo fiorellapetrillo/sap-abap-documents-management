@@ -389,7 +389,7 @@ FORM user_command USING r_ucomm     LIKE sy-ucomm
   CASE r_ucomm.
     WHEN 'PRINT_SF'.
 
-      "Verificar que se haya seleccionado un registro    ???El ALV se muestra con la primer sociedad ya seleccionada
+      "Verificar que se haya seleccionado un registro    
       IF rs_selfield-tabindex IS INITIAL OR rs_selfield-tabindex = 0.
         "Debe seleccionar un registro
         MESSAGE e011(zfir_bus_doc_msg).
