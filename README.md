@@ -19,6 +19,7 @@
 <img width="400" alt="zfip_fb01_screen_0100" src="https://github.com/user-attachments/assets/ce316540-e921-4311-8983-d543ad54a0eb" />
 <img width="400" alt="zfip_fb01_screen_0200" src="https://github.com/user-attachments/assets/11199017-d427-43c8-90c6-3f27f55a41e9" />
 <img width="400" alt="zfip_fb01_screen_0300" src="https://github.com/user-attachments/assets/a14f9fd2-71d0-411d-9b52-c07aa6a96f88" />
+
    
 - **ZFIR_BUSCAR_DOC (ALV Report)**  
   - Reporte con pantalla de selección y salida ALV para consulta de documentos almacenados. Incluye consolidación de datos de cabecera y posiciones, y dispara SmartForms para emisión documental.  
