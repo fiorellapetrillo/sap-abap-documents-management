@@ -27,7 +27,8 @@
     - [/1_src/ZFIR_BUSCAR_DOC](./1_src/ZFIR_BUSCAR_DOC)  
     - [/2_docs/ZFIR_BUSCAR_DOC](./2_docs/ZFIR_BUSCAR_DOC)  
 <img width="500" alt="zfir_buscar_doc_selection_screen" src="https://github.com/user-attachments/assets/2cb281f1-795b-4971-8328-ace8fb9ec7f2" />
-<img width="900" alt="zfir_buscar_doc_alv_output" src="https://github.com/user-attachments/assets/d4061c05-9288-4bf2-9c7b-148d49e338a2" />
+<img width="900" alt="zfir_buscar_doc_alv" src="https://github.com/user-attachments/assets/1dc879fb-5428-4baa-85b8-d47ba1f1b6a6" />
+
 
 - **SmartForms**  
   - Formularios para la impresión de documentos desde el ALV.  
@@ -110,7 +111,7 @@
     - [/1_src/ZFIR_BUSCAR_DOC](./1_src/ZFIR_BUSCAR_DOC)  
     - [/2_docs/ZFIR_BUSCAR_DOC](./2_docs/ZFIR_BUSCAR_DOC)  
 <img width="500" alt="zfir_buscar_doc_selection_screen" src="https://github.com/user-attachments/assets/2cb281f1-795b-4971-8328-ace8fb9ec7f2" />
-<img width="900" alt="zfir_buscar_doc_alv_output" src="https://github.com/user-attachments/assets/d4061c05-9288-4bf2-9c7b-148d49e338a2" />
+<img width="900" alt="zfir_buscar_doc_alv" src="https://github.com/user-attachments/assets/1dc879fb-5428-4baa-85b8-d47ba1f1b6a6" />
 
 - **SmartForms**  
   - Print forms for documents triggered from the ALV output.  
