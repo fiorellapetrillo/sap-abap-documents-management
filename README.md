@@ -26,16 +26,16 @@
   - Código fuente y capturas:  
     - [/1_src/ZFIR_BUSCAR_DOC](./1_src/ZFIR_BUSCAR_DOC)  
     - [/2_docs/ZFIR_BUSCAR_DOC](./2_docs/ZFIR_BUSCAR_DOC)  
-<img width="400" alt="zfir_buscar_doc_selection_screen" src="https://github.com/user-attachments/assets/2cb281f1-795b-4971-8328-ace8fb9ec7f2" />
-<img width="600" alt="zfir_buscar_doc_alv_output" src="https://github.com/user-attachments/assets/d4061c05-9288-4bf2-9c7b-148d49e338a2" />
+<img width="500" alt="zfir_buscar_doc_selection_screen" src="https://github.com/user-attachments/assets/2cb281f1-795b-4971-8328-ace8fb9ec7f2" />
+<img width="700" alt="zfir_buscar_doc_alv_output" src="https://github.com/user-attachments/assets/d4061c05-9288-4bf2-9c7b-148d49e338a2" />
 
 - **SmartForms**  
   - Formularios para la impresión de documentos desde el ALV.  
   - Capturas:  
-    - [/2_docs/ZFISF_DOC_KR](./2_docs/ZFISF_DOC_KR)  
-    - [/2_docs/ZFISF_DOC_KZ](./2_docs/ZFISF_DOC_KZ)  
+    - [/2_docs/ZFISF_DOC_KR](./2_docs/ZFISF_DOC_KR_KZ(KR))  
+    - [/2_docs/ZFISF_DOC_KZ](./2_docs/ZFISF_DOC_KR_KZ(KZ))  
     - [/2_docs/ZFISF_DOC_SA](./2_docs/ZFISF_DOC_SA)
-<img width="300" alt="ZFISF_DOC_KR_KZ(2)" src="https://github.com/user-attachments/assets/14e434f1-1cde-44a8-b0e5-af95d5391666" />
+<img width="400" alt="ZFISF_DOC_KR_KZ(2)" src="https://github.com/user-attachments/assets/14e434f1-1cde-44a8-b0e5-af95d5391666" />
      
 - **ZFIP_FB01_AUTOM (Batch Input)**  
   - Programa de automatización de carga masiva mediante lectura de archivo TXT desde frontend / application server (AL11) y procesamiento mediante BDC / Batch Input con CALL TRANSACTION
