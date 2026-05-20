@@ -32,9 +32,9 @@
 - **SmartForms**  
   - Formularios para la impresión de documentos desde el ALV.  
   - Capturas:  
-    - [/2_docs/ZFISF_DOC_KR](./2_docs/ZFISF_DOC_KR_KZ(KR))  
-    - [/2_docs/ZFISF_DOC_KZ](./2_docs/ZFISF_DOC_KR_KZ(KZ))  
-    - [/2_docs/ZFISF_DOC_SA](./2_docs/ZFISF_DOC_SA)
+    - [/2_docs/ZFISF_DOC_KR](2_docs/SMARTFORMS/ZFISF_DOC_KR_KZ(KR).png)  
+    - [/2_docs/ZFISF_DOC_KZ](2_docs/SMARTFORMS/ZFISF_DOC_KR_KZ(KZ).png)  
+    - [/2_docs/ZFISF_DOC_SA](2_docs/SMARTFORMS/ZFISF_DOC_SA.png)
 <img width="400" alt="ZFISF_DOC_KR_KZ(2)" src="https://github.com/user-attachments/assets/14e434f1-1cde-44a8-b0e5-af95d5391666" />
      
 - **ZFIP_FB01_AUTOM (Batch Input)**  
@@ -115,9 +115,9 @@
 - **SmartForms**  
   - Print forms for documents triggered from the ALV output.  
   - Screenshots:  
-    - [/2_docs/ZFISF_DOC_KR](./2_docs/ZFISF_DOC_KR_KZ(KR))  
-    - [/2_docs/ZFISF_DOC_KZ](./2_docs/ZFISF_DOC_KR_KZ(KZ))  
-    - [/2_docs/ZFISF_DOC_SA](./2_docs/ZFISF_DOC_SA)
+    - [/2_docs/ZFISF_DOC_KR](2_docs/SMARTFORMS/ZFISF_DOC_KR_KZ(KR).png)  
+    - [/2_docs/ZFISF_DOC_KZ](2_docs/SMARTFORMS/ZFISF_DOC_KR_KZ(KZ).png)  
+    - [/2_docs/ZFISF_DOC_SA](2_docs/SMARTFORMS/ZFISF_DOC_SA.png)
 <img width="300" alt="ZFISF_DOC_KR_KZ(2)" src="https://github.com/user-attachments/assets/14e434f1-1cde-44a8-b0e5-af95d5391666" />
      
 - **ZFIP_FB01_AUTOM (Batch Input)**  
