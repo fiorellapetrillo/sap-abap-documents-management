@@ -35,7 +35,7 @@
     - [/2_docs/ZFISF_DOC_KR](./2_docs/ZFISF_DOC_KR)  
     - [/2_docs/ZFISF_DOC_KZ](./2_docs/ZFISF_DOC_KZ)  
     - [/2_docs/ZFISF_DOC_SA](./2_docs/ZFISF_DOC_SA)
-   <img width="500" alt="ZFISF_DOC_KR_KZ(2)" src="https://github.com/user-attachments/assets/63fdc735-8c19-461a-b156-e1be760902de" />
+<img width="300" alt="ZFISF_DOC_KR_KZ(2)" src="https://github.com/user-attachments/assets/14e434f1-1cde-44a8-b0e5-af95d5391666" />
      
 - **ZFIP_FB01_AUTOM (Batch Input)**  
   - Programa de automatización de carga masiva mediante lectura de archivo TXT desde frontend / application server (AL11) y procesamiento mediante BDC / Batch Input con CALL TRANSACTION
@@ -118,7 +118,7 @@
     - [/2_docs/ZFISF_DOC_KR](./2_docs/ZFISF_DOC_KR)  
     - [/2_docs/ZFISF_DOC_KZ](./2_docs/ZFISF_DOC_KZ)  
     - [/2_docs/ZFISF_DOC_SA](./2_docs/ZFISF_DOC_SA)
-   <img width="400" alt="ZFISF_DOC_KR_KZ(2)" src="https://github.com/user-attachments/assets/06744119-6da7-4f69-8e37-2e402aab2e8e" />
+<img width="300" alt="ZFISF_DOC_KR_KZ(2)" src="https://github.com/user-attachments/assets/14e434f1-1cde-44a8-b0e5-af95d5391666" />
      
 - **ZFIP_FB01_AUTOM (Batch Input)**  
   - Mass data load automation program via TXT file reading from frontend / application server (AL11) and processing via BDC / Batch Input with CALL TRANSACTION.  
