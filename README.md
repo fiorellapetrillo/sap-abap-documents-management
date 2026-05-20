@@ -16,9 +16,9 @@
   - Código fuente y capturas:  
     - [/1_src/ZFIP_FB01](./1_src/ZFIP_FB01)  
     - [/2_docs/ZFIP_FB01](./2_docs/ZFIP_FB01)
-<img width="400" alt="zfip_fb01_screen_0100" src="https://github.com/user-attachments/assets/ce316540-e921-4311-8983-d543ad54a0eb" />
-<img width="400" alt="zfip_fb01_screen_0200" src="https://github.com/user-attachments/assets/11199017-d427-43c8-90c6-3f27f55a41e9" />
-<img width="400" alt="zfip_fb01_screen_0300" src="https://github.com/user-attachments/assets/a14f9fd2-71d0-411d-9b52-c07aa6a96f88" />
+  <img width="400" alt="zfip_fb01_screen_0100" src="https://github.com/user-attachments/assets/ce316540-e921-4311-8983-d543ad54a0eb" />
+  <img width="400" alt="zfip_fb01_screen_0200" src="https://github.com/user-attachments/assets/11199017-d427-43c8-90c6-3f27f55a41e9" />
+  <img width="400" alt="zfip_fb01_screen_0300" src="https://github.com/user-attachments/assets/a14f9fd2-71d0-411d-9b52-c07aa6a96f88" />
 
    
 - **ZFIR_BUSCAR_DOC (ALV Report)**  
@@ -26,8 +26,8 @@
   - Código fuente y capturas:  
     - [/1_src/ZFIR_BUSCAR_DOC](./1_src/ZFIR_BUSCAR_DOC)  
     - [/2_docs/ZFIR_BUSCAR_DOC](./2_docs/ZFIR_BUSCAR_DOC)  
-<img width="500" alt="zfir_buscar_doc_selection_screen" src="https://github.com/user-attachments/assets/2cb281f1-795b-4971-8328-ace8fb9ec7f2" />
-<img width="900" alt="zfir_buscar_doc_alv" src="https://github.com/user-attachments/assets/1dc879fb-5428-4baa-85b8-d47ba1f1b6a6" />
+  <img width="500" alt="zfir_buscar_doc_selection_screen" src="https://github.com/user-attachments/assets/2cb281f1-795b-4971-8328-ace8fb9ec7f2" />
+<img width="1000" alt="zfir_buscar_doc_alv" src="https://github.com/user-attachments/assets/1dc879fb-5428-4baa-85b8-d47ba1f1b6a6" />
 
 
 - **SmartForms**  
@@ -36,15 +36,15 @@
     - [/2_docs/ZFISF_DOC_KR](2_docs/SMARTFORMS/ZFISF_DOC_KR_KZ(KR).png)  
     - [/2_docs/ZFISF_DOC_KZ](2_docs/SMARTFORMS/ZFISF_DOC_KR_KZ(KZ).png)  
     - [/2_docs/ZFISF_DOC_SA](2_docs/SMARTFORMS/ZFISF_DOC_SA.png)
-<img width="400" alt="ZFISF_DOC_KR_KZ(2)" src="https://github.com/user-attachments/assets/14e434f1-1cde-44a8-b0e5-af95d5391666" />
+  <img width="400" alt="ZFISF_DOC_KR_KZ(2)" src="https://github.com/user-attachments/assets/14e434f1-1cde-44a8-b0e5-af95d5391666" />
      
 - **ZFIP_FB01_AUTOM (Batch Input)**  
   - Programa de automatización de carga masiva mediante lectura de archivo TXT desde frontend / application server (AL11) y procesamiento mediante BDC / Batch Input con CALL TRANSACTION
   - Código fuente y capturas:  
     - [/1_src/ZFIP_FB01_AUTOM](./1_src/ZFIP_FB01_AUTOM)  
     - [/2_docs/ZFIP_FB01_AUTOM](./2_docs/ZFIP_FB01_AUTOM)  
-<img width="400" alt="zfip_fb01_autom_selection_screen_1" src="https://github.com/user-attachments/assets/07ee64e8-4960-4405-b7b9-cf6f157354c8" />
-<img width="400"  alt="zfip_fb01_autom_results" src="https://github.com/user-attachments/assets/bcf9b700-114f-45b0-a875-d80ee1369be9" />
+  <img width="400" alt="zfip_fb01_autom_selection_screen_1" src="https://github.com/user-attachments/assets/07ee64e8-4960-4405-b7b9-cf6f157354c8" />
+  <img width="400"  alt="zfip_fb01_autom_results" src="https://github.com/user-attachments/assets/bcf9b700-114f-45b0-a875-d80ee1369be9" />
 
 ## Tecnologías
 - ABAP 
@@ -101,16 +101,16 @@
   - Source code and screenshots:  
     - [/1_src/ZFIP_FB01](./1_src/ZFIP_FB01)  
     - [/2_docs/ZFIP_FB01](./2_docs/ZFIP_FB01)
-<img width="400" alt="zfip_fb01_screen_0100" src="https://github.com/user-attachments/assets/ce316540-e921-4311-8983-d543ad54a0eb" />
-<img width="400" alt="zfip_fb01_screen_0200" src="https://github.com/user-attachments/assets/11199017-d427-43c8-90c6-3f27f55a41e9" />
-<img width="400" alt="zfip_fb01_screen_0300" src="https://github.com/user-attachments/assets/a14f9fd2-71d0-411d-9b52-c07aa6a96f88" />
+  <img width="400" alt="zfip_fb01_screen_0100" src="https://github.com/user-attachments/assets/ce316540-e921-4311-8983-d543ad54a0eb" />
+  <img width="400" alt="zfip_fb01_screen_0200" src="https://github.com/user-attachments/assets/11199017-d427-43c8-90c6-3f27f55a41e9" />
+  <img width="400" alt="zfip_fb01_screen_0300" src="https://github.com/user-attachments/assets/a14f9fd2-71d0-411d-9b52-c07aa6a96f88" />
    
 - **ZFIR_BUSCAR_DOC (ALV Report)**  
   - Report with selection screen and ALV grid output for querying process documents. Includes consolidation of header and line item data, and triggers SmartForms for document printing.  
   - Source code and screenshots:  
     - [/1_src/ZFIR_BUSCAR_DOC](./1_src/ZFIR_BUSCAR_DOC)  
     - [/2_docs/ZFIR_BUSCAR_DOC](./2_docs/ZFIR_BUSCAR_DOC)  
-<img width="500" alt="zfir_buscar_doc_selection_screen" src="https://github.com/user-attachments/assets/2cb281f1-795b-4971-8328-ace8fb9ec7f2" />
+  <img width="500" alt="zfir_buscar_doc_selection_screen" src="https://github.com/user-attachments/assets/2cb281f1-795b-4971-8328-ace8fb9ec7f2" />
 <img width="900" alt="zfir_buscar_doc_alv" src="https://github.com/user-attachments/assets/1dc879fb-5428-4baa-85b8-d47ba1f1b6a6" />
 
 - **SmartForms**  
@@ -119,15 +119,15 @@
     - [/2_docs/ZFISF_DOC_KR](2_docs/SMARTFORMS/ZFISF_DOC_KR_KZ(KR).png)  
     - [/2_docs/ZFISF_DOC_KZ](2_docs/SMARTFORMS/ZFISF_DOC_KR_KZ(KZ).png)  
     - [/2_docs/ZFISF_DOC_SA](2_docs/SMARTFORMS/ZFISF_DOC_SA.png)
-<img width="400" alt="ZFISF_DOC_KR_KZ(2)" src="https://github.com/user-attachments/assets/14e434f1-1cde-44a8-b0e5-af95d5391666" />
+  <img width="400" alt="ZFISF_DOC_KR_KZ(2)" src="https://github.com/user-attachments/assets/14e434f1-1cde-44a8-b0e5-af95d5391666" />
      
 - **ZFIP_FB01_AUTOM (Batch Input)**  
   - Mass data load automation program via TXT file reading from frontend / application server (AL11) and processing via BDC / Batch Input with CALL TRANSACTION.  
   - Source code and screenshots:  
     - [/1_src/ZFIP_FB01_AUTOM](./1_src/ZFIP_FB01_AUTOM)  
     - [/2_docs/ZFIP_FB01_AUTOM](./2_docs/ZFIP_FB01_AUTOM)  
-<img width="400" alt="zfip_fb01_autom_selection_screen_1" src="https://github.com/user-attachments/assets/07ee64e8-4960-4405-b7b9-cf6f157354c8" />
-<img width="400"  alt="zfip_fb01_autom_results" src="https://github.com/user-attachments/assets/bcf9b700-114f-45b0-a875-d80ee1369be9" />
+  <img width="400" alt="zfip_fb01_autom_selection_screen_1" src="https://github.com/user-attachments/assets/07ee64e8-4960-4405-b7b9-cf6f157354c8" />
+  <img width="400"  alt="zfip_fb01_autom_results" src="https://github.com/user-attachments/assets/bcf9b700-114f-45b0-a875-d80ee1369be9" />
 
 ## Technologies
 - ABAP 
