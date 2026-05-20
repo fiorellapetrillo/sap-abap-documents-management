@@ -22,12 +22,13 @@
 
    
 - **ZFIR_BUSCAR_DOC (ALV Report)**  
-  - Reporte con pantalla de selección y salida ALV para consulta de documentos almacenados. Incluye consolidación de datos de cabecera y posiciones, y dispara SmartForms para emisión documental.  
+  - Reporte con pantalla de selección y salida ALV para consulta de documentos procesados. Incluye consolidación de datos de cabecera y posiciones, y dispara SmartForms para emisión documental.  
   - Código fuente y capturas:  
     - [/1_src/ZFIR_BUSCAR_DOC](./1_src/ZFIR_BUSCAR_DOC)  
     - [/2_docs/ZFIR_BUSCAR_DOC](./2_docs/ZFIR_BUSCAR_DOC)  
-<img width="500" alt="zfir_buscar_doc_selection_screen" src="https://github.com/user-attachments/assets/2cb281f1-795b-4971-8328-ace8fb9ec7f2" />
-<img width="2314" height="355" alt="zfir_buscar_doc_alv_output" src="https://github.com/user-attachments/assets/d4061c05-9288-4bf2-9c7b-148d49e338a2" />
+<img width="400" alt="zfir_buscar_doc_selection_screen" src="https://github.com/user-attachments/assets/2cb281f1-795b-4971-8328-ace8fb9ec7f2" />
+<img width="400" height="726" alt="CASO ERRORES Y EXITOSOS" src="https://github.com/user-attachments/assets/e43fab8e-9ec0-4619-82a8-eca5ee914f68" />
+
 
 - **SmartForms**  
   - Formularios para la impresión de documentos desde el ALV.  
@@ -38,7 +39,7 @@
    <img width="500" alt="ZFISF_DOC_KR_KZ(2)" src="https://github.com/user-attachments/assets/63fdc735-8c19-461a-b156-e1be760902de" />
      
 - **ZFIP_FB01_AUTOM (Batch Input)**  
-  - Programa de automatización que simula la carga masiva de documentos utilizando BDCDATA y CALL TRANSACTION, incluyendo manejo de mensajes vía BDCMSGCOLL.  
+  - Programa de automatización de carga masiva mediante lectura de archivo TXT desde frontend / application server (AL11) y procesamiento mediante BDC / Batch Input con CALL TRANSACTION
   - Código fuente y capturas:  
     - [/1_src/ZFIP_FB01_AUTOM](./1_src/ZFIP_FB01_AUTOM)  
     - [/2_docs/ZFIP_FB01_AUTOM](./2_docs/ZFIP_FB01_AUTOM)  
@@ -46,14 +47,17 @@
 <img width="500" alt="zfip_fb01_autom_success" src="https://github.com/user-attachments/assets/638364bf-3d01-438b-af69-0481e94dfb3f" />
 
 ## Tecnologías
-- ABAP (SAP NetWeaver 7.02)  
+- ABAP 
 - Module Pool (Dynpro, PBO/PAI)  
 - ALV (ABAP List Viewer)  
 - SmartForms  
 - Batch Input (BDC)  
 - Open SQL  
 - Diccionario de Datos (tablas, elementos de datos, dominios)  
-- Módulos de Función  
+- Módulos de Función
+- Vistas de mantenimiento (SM30)
+- Clases de mensajes (SE91)
+- Objetos de rango numérico (SNRO)
 
 ## Modelo de datos
 - Para sustentar la lógica de la aplicación en el entorno de práctica NetWeaver 7.02, se modelaron tablas propias basadas en el estándar de SAP:
